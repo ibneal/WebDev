@@ -1,0 +1,33 @@
+<!doctype html>
+<html>
+    <head> 
+        <meta charset="utf-8" /> 
+		<title>Form Example</title>
+        <link rel="stylesheet" href="formValidation.css" />
+	</head>
+
+	<body>
+		<form>
+            <fieldset>
+                <legend><em>Customer Info</em></legend>
+                <strong>Name: </strong><input id="name" type="text" name="name" />
+                <strong>Account Number: </strong><input id="account" type="text" name="account" /><br /><br />
+                <strong>Payment: </strong><input id="payment" type="text" name="payment" /><br /><br />
+				<!-- Notice how labels allow us to select element by selecting the label 
+				 Compare One-Year and Two-Year Plan below -->
+                <strong><label for="news">Receive News:</label></strong><input type="checkbox" name="news" id="news" value="YesReceiveNews" /><br /><br />
+                <strong>Payment Plan:</strong>
+                    <input type="radio" name="plan" id="oneYearPlan" value="OneYearPaymentPlan" /><label for="oneYearPlan">One-Year</label>
+                    <input type="radio" name="plan" id="twoYearPlan" value="TwoYearPaymentPlan" />Two-Year<br /><br>
+                <strong>Location:</strong>
+                    <select name="location">
+                        <option value="In-State">In-State</option>
+                        <option value="Out-of-State" selected="selected">Out-of-State</option>
+                    </select>
+                <br /><br />
+                <input type="reset" />
+                <input type="submit" value="Submit Data"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
